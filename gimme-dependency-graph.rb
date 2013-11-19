@@ -100,7 +100,7 @@ end
 def scan_file(filepath)
 	modules = {}
 	File.open(filepath) do |file|
-		contents = file.read
+		contents = file.read.force_encoding("utf-8")
 		matches = contents.scan($dependency_line)
 		matches.each do |match|
 			if match[1]

@@ -3,6 +3,13 @@ gimme-dependency-graph
 
 Scan a codebase that uses our internal Gimme framework and automatically generate reports and graphs of module dependencies.
 
+Installation
+------------
+
+#. Clone the git repo
+#. Ensure you have the graph gem installed (to produce the raw .dot graph files): `gem install graph`
+#. Ensure you have the graphviz library installed (to render PNGs from the .dot graph files): `apt-get install graphviz`
+
 Usage
 -----
 
